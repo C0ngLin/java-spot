@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cl.spot.mapper.SpotMainMapper">
+
+    <resultMap id="BaseResultMap" type="com.cl.spot.domain.SpotMain">
+            <id property="spotMainId" column="spot_main_id" jdbcType="OTHER"/>
+            <result property="spotMainTitle" column="spot_main_title" jdbcType="VARCHAR"/>
+            <result property="spotMainUrl" column="spot_main_url" jdbcType="VARCHAR"/>
+            <result property="spotMainHot" column="spot_main_hot" jdbcType="OTHER"/>
+            <result property="spotMainPingtai" column="spot_main_pingtai" jdbcType="TINYINT"/>
+            <result property="spotMainDate" column="spot_main_date" jdbcType="TIMESTAMP"/>
+            <result property="spotMainArea" column="spot_main_area" jdbcType="TINYINT"/>
+            <result property="spotMainSort" column="spot_main_sort" jdbcType="TINYINT"/>
+            <result property="spotMainZhuanfa" column="spot_main_zhuanfa" jdbcType="OTHER"/>
+            <result property="spotMainDianzan" column="spot_main_dianzan" jdbcType="OTHER"/>
+            <result property="spotMainPinglun" column="spot_main_pinglun" jdbcType="OTHER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        spot_main_id,spot_main_title,spot_main_url,
+        spot_main_hot,spot_main_pingtai,spot_main_date,
+        spot_main_area,spot_main_sort,spot_main_zhuanfa,
+        spot_main_dianzan,spot_main_pinglun
+    </sql>
+</mapper>

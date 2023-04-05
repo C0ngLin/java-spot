@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cl.spot.mapper.SpotDouyinMapper">
+
+    <resultMap id="BaseResultMap" type="com.cl.spot.domain.SpotDouyin">
+            <id property="spotDouyinPkId" column="spot_douyin_pk_id" jdbcType="BIGINT"/>
+            <result property="spotDouyinTitle" column="spot_douyin_title" jdbcType="VARCHAR"/>
+            <result property="spotDouyinUrl" column="spot_douyin_url" jdbcType="VARCHAR"/>
+            <result property="spotDouyinPort" column="spot_douyin_port" jdbcType="VARCHAR"/>
+            <result property="spotDouyinIsDelete" column="spot_douyin_is_delete" jdbcType="TINYINT"/>
+            <result property="spotDouyinCreateTime" column="spot_douyin_create_time" jdbcType="TIMESTAMP"/>
+            <result property="spotDouyinZhishu" column="spot_douyin_zhishu" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        spot_douyin_pk_id,spot_douyin_title,spot_douyin_url,
+        spot_douyin_port,spot_douyin_is_delete,spot_douyin_create_time,
+        spot_douyin_update_time
+    </sql>
+</mapper>

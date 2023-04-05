@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cl.spot.mapper.SpotBilibiliMapper">
+
+    <resultMap id="BaseResultMap" type="com.cl.spot.domain.SpotBilibili">
+            <id property="spotBilibiliPkId" column="spot_bilibili_pk_id" jdbcType="BIGINT"/>
+            <result property="spotBilibiliTitle" column="spot_bilibili_title" jdbcType="VARCHAR"/>
+            <result property="spotBilibiliUrl" column="spot_bilibili_url" jdbcType="VARCHAR"/>
+            <result property="spotBilibiliPort" column="spot_bilibili_port" jdbcType="VARCHAR"/>
+            <result property="spotBilibiliIsDelete" column="spot_bilibili_is_delete" jdbcType="TINYINT"/>
+            <result property="spotBilibiliCreateTime" column="spot_bilibili_create_time" jdbcType="TIMESTAMP"/>
+            <result property="spotBilibiliUpdateTime" column="spot_bilibili_update_time" jdbcType="TIMESTAMP"/>
+            <result property="spotBilibiliZhishu" column="spot_bilibili_zhishu" jdbcType="VARCHAR"/>
+
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        spot_bilibili_pk_id,spot_bilibili_title,spot_bilibili_url,
+        spot_bilibili_port,spot_bilibili_is_delete,spot_bilibili_create_time,
+        spot_bilibili_update_time
+    </sql>
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cl.spot.mapper.SpotToutiaoMapper">
+
+    <resultMap id="BaseResultMap" type="com.cl.spot.domain.SpotToutiao">
+            <id property="spotToutiaoPkId" column="spot_toutiao_pk_id" jdbcType="BIGINT"/>
+            <result property="spotToutiaoTitle" column="spot_toutiao_title" jdbcType="VARCHAR"/>
+            <result property="spotToutiaoUrl" column="spot_toutiao_url" jdbcType="VARCHAR"/>
+            <result property="spotToutiaoPort" column="spot_toutiao_port" jdbcType="VARCHAR"/>
+            <result property="spotToutiaoIsDelete" column="spot_toutiao_is_delete" jdbcType="TINYINT"/>
+            <result property="spotToutiaoCreateTime" column="spot_toutiao_create_time" jdbcType="TIMESTAMP"/>
+            <result property="spotToutiaoZhishu" column="spot_toutiao_zhishu" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        spot_toutiao_pk_id,spot_toutiao_title,spot_toutiao_url,
+        spot_toutiao_port,spot_toutiao_is_delete,spot_toutiao_create_time,
+        spot_toutiao_update_time
+    </sql>
+</mapper>

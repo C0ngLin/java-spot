@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cl.spot.mapper.SpotTiebaMapper">
+
+    <resultMap id="BaseResultMap" type="com.cl.spot.domain.SpotTieba">
+            <id property="spotTiebaPkId" column="spot_tieba_pk_id" jdbcType="BIGINT"/>
+            <result property="spotTiebaTitle" column="spot_tieba_title" jdbcType="VARCHAR"/>
+            <result property="spotTiebaUrl" column="spot_tieba_url" jdbcType="VARCHAR"/>
+            <result property="spotTiebaPort" column="spot_tieba_port" jdbcType="VARCHAR"/>
+            <result property="spotTiebaIsDelete" column="spot_tieba_is_delete" jdbcType="TINYINT"/>
+            <result property="spotTiebaCreateTime" column="spot_tieba_create_time" jdbcType="TIMESTAMP"/>
+            <result property="spotTiebaZhishu" column="spot_tieba_zhishu" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        spot_tieba_pk_id,spot_tieba_title,spot_tieba_url,
+        spot_tieba_port,spot_tieba_is_delete,spot_tieba_create_time,
+        spot_tieba_update_time
+    </sql>
+</mapper>

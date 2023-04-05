@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cl.spot.mapper.SpotWeixinMapper">
+
+    <resultMap id="BaseResultMap" type="com.cl.spot.domain.SpotWeixin">
+            <id property="spotWeixinPkId" column="spot_weixin_pk_id" jdbcType="BIGINT"/>
+            <result property="spotWeixinTitle" column="spot_weixin_title" jdbcType="VARCHAR"/>
+            <result property="spotWeixinUrl" column="spot_weixin_url" jdbcType="VARCHAR"/>
+            <result property="spotWeixinPort" column="spot_weixin_port" jdbcType="VARCHAR"/>
+            <result property="spotWeixinIsDelete" column="spot_weixin_is_delete" jdbcType="TINYINT"/>
+            <result property="spotWeixinCreateTime" column="spot_weixin_create_time" jdbcType="TIMESTAMP"/>
+            <result property="spotWeixinZhishu" column="spot_weixin_zhishu" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        spot_weixin_pk_id,spot_weixin_title,spot_weixin_url,
+        spot_weixin_port,spot_weixin_is_delete,spot_weixin_create_time,
+        spot_weixin_update_time
+    </sql>
+</mapper>

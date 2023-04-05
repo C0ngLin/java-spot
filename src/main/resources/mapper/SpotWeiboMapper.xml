@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cl.spot.mapper.SpotWeiboMapper">
+
+    <resultMap id="BaseResultMap" type="com.cl.spot.domain.SpotWeibo">
+            <id property="spotWeiboPkId" column="spot_weibo_pk_id" jdbcType="BIGINT"/>
+            <result property="spotWeiboTitle" column="spot_weibo_title" jdbcType="VARCHAR"/>
+            <result property="spotWeiboUrl" column="spot_weibo_url" jdbcType="VARCHAR"/>
+            <result property="spotWeiboPort" column="spot_weibo_port" jdbcType="VARCHAR"/>
+            <result property="spotWeiboIsDelete" column="spot_weibo_is_delete" jdbcType="TINYINT"/>
+            <result property="spotWeiboCreateTime" column="spot_weibo_create_time" jdbcType="TIMESTAMP"/>
+            <result property="spotWeiboZhishu" column="spot_weibo_zhishu" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        spot_weibo_pk_id,spot_weibo_title,spot_weibo_url,
+        spot_weibo_port,spot_weibo_is_delete,spot_weibo_create_time,
+        spot_weibo_update_time
+    </sql>
+</mapper>

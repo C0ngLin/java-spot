@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cl.spot.mapper.SpotBaiduMapper">
+
+    <resultMap id="BaseResultMap" type="com.cl.spot.domain.SpotBaidu">
+            <id property="spotBaiduPkId" column="spot_baidu_pk_id" jdbcType="BIGINT"/>
+            <result property="spotBaiduTitle" column="spot_baidu_title" jdbcType="VARCHAR"/>
+            <result property="spotBaiduUrl" column="spot_baidu_url" jdbcType="VARCHAR"/>
+            <result property="spotBaiduImagUrl" column="spot_baidu_imag_url" jdbcType="VARCHAR"/>
+            <result property="spotBaiduPort" column="spot_baidu_port" jdbcType="VARCHAR"/>
+            <result property="spotBaiduHot" column="spot_baidu_hot" jdbcType="VARCHAR"/>
+            <result property="spotBaiduIsDelete" column="spot_baidu_is_delete" jdbcType="TINYINT"/>
+            <result property="spotBaiduCreateTime" column="spot_baidu_create_time" jdbcType="TIMESTAMP"/>
+            <result property="spotBaiduUpdateTime" column="spot_baidu_update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        spot_baidu_pk_id,spot_baidu_title,spot_baidu_url,
+        spot_baidu_imag_url,spot_baidu_port,spot_baidu_hot,
+        spot_baidu_is_delete,spot_baidu_create_time,spot_baidu_update_time
+    </sql>
+</mapper>

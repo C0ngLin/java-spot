@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cl.spot.mapper.SpotDoubanMapper">
+
+    <resultMap id="BaseResultMap" type="com.cl.spot.domain.SpotDouban">
+            <id property="spotDoubanPkId" column="spot_douban_pk_id" jdbcType="BIGINT"/>
+            <result property="spotDoubanTitle" column="spot_douban_title" jdbcType="VARCHAR"/>
+            <result property="spotDoubanUrl" column="spot_douban_url" jdbcType="VARCHAR"/>
+            <result property="spotDoubanPort" column="spot_douban_port" jdbcType="VARCHAR"/>
+            <result property="spotDoubanIsDelete" column="spot_douban_is_delete" jdbcType="TINYINT"/>
+            <result property="spotDoubanCreateTime" column="spot_douban_create_time" jdbcType="TIMESTAMP"/>
+            <result property="spotDoubanUpdateTime" column="spot_douban_update_time" jdbcType="TIMESTAMP"/>
+            <result property="spotDoubanUpdateTime" column="spot_douban_update_time" jdbcType="TIMESTAMP"/>
+            <result property="spotDoubanZhishu" column="spot_douban_zhishu" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        spot_douban_pk_id,spot_douban_title,spot_douban_url,
+        spot_douban_port,spot_douban_is_delete,spot_douban_create_time,
+        spot_douban_update_time
+    </sql>
+</mapper>
